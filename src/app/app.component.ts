@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo';
+  title = 'PWA demo';
+
+  showWelcomeDialog() {
+    alert('Welcome to PWA demo app');
+  }
 }

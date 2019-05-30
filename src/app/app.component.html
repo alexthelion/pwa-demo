@@ -1,22 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/manchester-united-v-afc-bournemouth-premier-league-5c2c8021d208a85a48000001.jpg">
+<div class="container">
+  <div class="row">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  <div class="row">
+    <img width="600" height="400" alt="Angular Logo" src="https://cdn.pixabay.com/photo/2017/10/12/03/03/view-2843338_1280.jpg">
+  </div>
+  <div class="row mt-3">
+    <button class="btn btn-primary" (click)="showWelcomeDialog()">Click me!</button>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-<button class="btn btn-primary">Click me!</button>
+
 
 <router-outlet></router-outlet>
