@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {UpdateSWService} from './update-sw.service';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PWA demo';
+  title = 'PWA demo application';
+
+  constructor(private sw: UpdateSWService) {
+    // check the service worker for updates
+    this.sw.checkForUpdates();
+  }
 
   showWelcomeDialog() {
     alert('Welcome to PWA demo app');
